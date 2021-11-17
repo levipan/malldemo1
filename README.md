@@ -4,6 +4,8 @@
 https://github.com/bayetech/wechat_mall_applet
 * demo2
 https://github.com/lin-xin/wxapp-mall
+* demo3
+https://github.com/skyvow/m-mall
 
 # 实现功能
 
