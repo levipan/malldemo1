@@ -1,5 +1,5 @@
 # 简介
-
+https://github.com/bayetech/wechat_mall_applet
 这是一个巴爷商城的微信小应用版本，是[巴爷微信商城](https://wechat.bayekeji.com)的简单版本。
 
 # 实现功能
