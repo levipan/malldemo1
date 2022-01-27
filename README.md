@@ -6,6 +6,10 @@ https://github.com/bayetech/wechat_mall_applet
 https://github.com/lin-xin/wxapp-mall
 * demo3
 https://github.com/skyvow/m-mall
+* demo4
+https://github.com/reference-project/zzc--
+* demo5
+https://github.com/Dejavu-Tech/EP-WechatApp
 
 # 实现功能
 
