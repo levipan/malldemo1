@@ -10,6 +10,8 @@ https://github.com/skyvow/m-mall
 https://github.com/reference-project/zzc--
 * demo5
 https://github.com/Dejavu-Tech/EP-WechatApp
+* demo6
+https://github.com/FZliweiliang/wechat-app-mall
 
 # 实现功能
 
