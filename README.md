@@ -1,3 +1,8 @@
+#记事本
+https://developers.weixin.qq.com/community/develop/article/doc/00068aec7941f8f57509794be54413
+https://developers.weixin.qq.com/community/develop/article/doc/00028227a2030013659d571275bc13
+
+
 # 简介
 这是一个巴爷商城的微信小应用版本，是[巴爷微信商城](https://wechat.bayekeji.com)的简单版本。
 * demo1
