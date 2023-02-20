@@ -160,3 +160,64 @@ for i in range(k):
     res += sums[i]
 
 print(res)
+
+
+## 题目0227-递增字符串
+递增字符串
+题目描述
+定义字符串完全由 'A' 和 'B'组成，当然也可以全是'A'或全是'B'。如果字符串从前往后都是以字典序排列的，那么我们称之为严格递增字符串。
+给出一个字符串s，允许修改字符串中的任意字符，即可以将任何的'A'修改成'B'，也可以将任何的'B'修改成'A'，求可以使s满足严格递增的最小修改次数。0<s的长度<100000。
+
+输入描述
+输入一个字符串： "AABBA"
+
+输出描述
+输出：1
+修改最后一位得到AABBB。
+
+示例一
+输入
+AABBA
+输出
+1
+说明
+参考解题 Java
+import java.util.Scanner;
+
+/**
+ * Created with IntelliJ IDEA.
+ *
+ * @Author: Amos
+ * @E-mail: amos@amoscloud.com
+ * @Date: 2023/2/15
+ * @Time: 11:24
+ * @Description:
+ */
+public class Main0227 {
+  public static void main(String[] args) {
+    try (Scanner scanner = new Scanner(System.in)) {
+      String line = scanner.next();
+      System.out.println(solution(line));
+    }
+  }
+
+  public static int solution(String str) {
+    int n = str.length();
+    int A = str.replaceAll("B", "").length();
+
+    int dp = 0;
+    if (str.charAt(0) == 'A') dp = 1;
+    int ans = check(0, dp, A - dp);
+
+    for (int i = 1; i < n; i++) {
+      if (str.charAt(i) == 'A') dp += 1;
+      ans = Math.min(ans, check(i, dp, A - dp));
+    }
+
+    return ans;
+  }
+
+  public static int check(int brandIdx, int brand_LM_A, int brand_R_A) {
+    return brandIdx + 1 - brand_LM_A + brand_R_A;
+  }
+}
